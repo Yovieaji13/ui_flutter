@@ -1,5 +1,5 @@
 Hasil Run
-![screenshoot].(image/ui.jpeg)
+![screenshoot](/image/ui.jpeg)
 
 # ui_flutter
 
