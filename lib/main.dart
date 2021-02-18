@@ -46,7 +46,7 @@
 // }
 
 import 'dart:io';
-
+import 'image.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -70,28 +70,17 @@ Widget build(BuildContext context) {
               children: <Widget>[
                 Container(
                   margin: const EdgeInsets.only(top: 20.0),
-                  child: Text('Pertandingan Hari ini',
+                  child: Text('Katalog Terbaru',
                       style: TextStyle(color: Colors.black)),
                 ),
                 Container(
                   margin: const EdgeInsets.only(top: 20.0),
-                  child: Text('Berita Terbaru',
+                  child: Text('Konten / Event Terbaru',
                       style: TextStyle(color: Colors.black)),
                 ),
               ],
-            ),
-            Column(
-              children: <Widget>[
-                Container(
-                  decoration: BoxDecoration(
-                    image: const DecorationImage(
-                      image : NetworkImage(url)
-                    )
-                  ),
-
-                )
-              ], 
-            ),
+            ),  
+            image(),
           ],
         ),
       ),
